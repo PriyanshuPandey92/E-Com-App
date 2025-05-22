@@ -1,52 +1,70 @@
-# React + TypeScript + Vite
+# E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+This is a modern **E-Commerce Website** built with React, TypeScript, and Tailwind CSS. It integrates **Firebase for authentication**, **Razorpay for payments**, and **React Hook Form with Zod** for form validation.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
+- **Frontend**: React, TypeScript, Tailwind CSS, Framer Motion
+- **State Management**: Zustand
+- **Forms & Validation**: React Hook Form, Zod, @hookform/resolvers
+- **Routing**: React Router DOM
+- **Icons**: React Icons, Lucide React
+- **API Requests**: Axios
+- **Payments**: Razorpay
+- **Authentication**: Firebase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Project Structure
+```
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Page components (Home, Shop, Checkout, etc.)
+│   ├── hooks/           # Custom hooks
+│   ├── store/           # Zustand store
+│   ├── utils/           # Helper functions
+│   ├── assets/          # Images, icons, and other static assets
+│   ├── App.tsx          # Main app component
+│   ├── main.tsx         # React entry point
+├── public/              # Static files
+├── package.json         # Project dependencies & scripts
+├── tailwind.config.js   # Tailwind CSS configuration
+├── tsconfig.json        # TypeScript configuration
+└── vite.config.ts       # Vite configuration
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🛠️ Installation
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/your-username/e-commerce-website.git
+   cd e-commerce-website
+   ```
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
+3. **Set up Firebase & Razorpay**
+   - Configure Firebase authentication
+   - Get your Razorpay API keys
+4. **Run the Development Server**
+   ```sh
+   npm run dev
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔧 Scripts
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Builds the project for production |
+| `npm run preview` | Previews the production build |
+| `npm run lint` | Runs ESLint to check for errors |
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# E-Com-App
-# E-Com-App
+
+
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+Feel free to fork this repository, open issues, and submit pull requests!
+
+## 📬 Contact
+For any questions, reach out to me at [priyanshupandey92@gmail.com](mailto:priyanshupandey92@gmail.com).
+
