@@ -15,7 +15,7 @@ interface CartState {
   updateItemQuantity: (id: number, quantity: number) => void;
 }
 
-export const useCartStore = create<CartState>((set, get) => ({
+export const useCartStore = create<CartState>((set) => ({
   // Initialize state from your cart service (e.g., localStorage)
   cartItems: cartService.getCartItems(),
   addItem: (item: CartItem) => {
